@@ -1,10 +1,6 @@
-const Page = ({ params }) => {
-  const details = [
-    { id: 1, name: "Yash", role: "Senior Developer" },
-    { id: 2, name: "Vaibhav", role: "Backend Developer" },
-    { id: 3, name: "Suresh", role: "Frontend Developer" },
-  ];
+import details from "../data";
 
+const Page = ({ params }) => {
   const { id } = params;
   const detail = details.find((item) => item.id === parseInt(id));
 
